@@ -39,9 +39,9 @@ function ContactWithoutCaptcha() {
       setError({ ...error, required: false });
     }
 
-    const serviceID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
-    const templateID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
-    const options = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
+    const serviceID = 'service_portfolio';
+    const templateID = 'template_default';
+    const options = 'VEalF0gmiGa9fw9Hp';
 
     try {
       console.log("before res", serviceID, templateID, options, userInput);
